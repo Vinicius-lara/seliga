@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lara Filmesl</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container" onclick="showMenu()">
+            <img src="images/logo.png" alt="Logo Lara Filmesl">
+            <h1>Lara Filmesl</h1>
+        </div>
+        <nav>
+            <button id="menu-filmes">Filmes</button>
+            <button id="menu-series">Séries</button>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section id="menu-inicial" class="visible">
+            <h2>Bem-vindo ao Lara Filmesl</h2>
+            <p>O <strong>Lara Filmesl</strong> foi criado por João Vinícius Lara, um grande entusiasta de filmes e séries. Inspirado pela paixão em compartilhar histórias que emocionam, ele sonhava em criar uma plataforma que ajudasse as pessoas a encontrar as melhores produções, proporcionando momentos inesquecíveis. Cada filme ou série aqui tem um propósito: aproximar emoções e trazer sorrisos.</p>
+            <p>Explore o mundo do entretenimento e descubra sua próxima experiência cinematográfica inesquecível!</p>
+        </section>
+        <section id="conteudo-filmes" class="hidden">
+            <h2>Filmes</h2>
+            <div class="item-list" id="filmes-list">
+                <!-- Lista de filmes gerada dinamicamente -->
+            </div>
+        </section>
+        <section id="conteudo-series" class="hidden">
+            <h2>Séries</h2>
+            <div class="item-list" id="series-list">
+                <!-- Lista de séries gerada dinamicamente -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de detalhes -->
+    <div id="details-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="">
+            <p><strong>Diretor:</strong> <span id="modal-director"></span></p>
+            <p><strong>Elenco:</strong> <span id="modal-cast"></span></p>
+            <p><strong>Custo de Produção:</strong> <span id="modal-cost"></span></p>
+            <p><strong>Inspiração:</strong> <span id="modal-inspiration"></span></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Lara Filmesl - Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
